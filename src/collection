@@ -1,0 +1,17 @@
+### Methods of Collection (Java Collection Framework)
+
+* **add(E e)** → Inserts the specified element into the collection.
+* **size()** → Returns the number of elements in the collection.
+* **remove(Object o)** → Removes the specified element from the collection.
+* **iterator()** → Returns an iterator to access the elements of the collection.
+* **addAll(Collection c)** → Adds all elements of the specified collection to the current collection.
+* **removeAll(Collection c)** → Removes all elements of the specified collection from the current collection.
+* **clear()** → Removes all elements from the collection.
+
+### Collection Hierarchy
+
+* **Collection** (Interface)
+
+  * **List** → Ordered collection, allows duplicates.
+  * **Set** → Does not allow duplicate elements.
+  * **Queue** → Used for processing elements in a specific order.
