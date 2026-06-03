@@ -1,7 +1,5 @@
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +7,7 @@ public class Main {
 
         //ArrayList -> concrete class
 
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new LinkedList<>();
         //
         list.add(10);
         list.add(20);
@@ -21,7 +19,7 @@ public class Main {
         System.out.println(list);
 
         //addAll
-        List<Integer> list2 = new ArrayList<>();
+        List<Integer> list2 = new LinkedList<>();
         list2.add(101);
         list2.add(50);
 
@@ -66,6 +64,58 @@ public class Main {
        }
 //contains
         System.out.println(list3.contains(10023));
+       
+       /// sort()
+       list.add(12);
+       list.add(6);
+        System.out.println("Printing Entre List: " + list);
+        
+        Collections.sort(list);
+        System.out.println("printing Entire List: " + list);
+
+        //how can we sort in descending order - homework
+
+        //clone
+//        LinkedList<Integer> newList = (LinkedList<Integer>)list.clone();
+//        marks.ensureCapacity(100);
+//        System.out.println("Printing Entire newList : " + newList);
+
+
+        //isEmpty
+//        System.out.println(newList.isEmpty());
+
+        //indexOf
+//        System.out.println(newList.indexOf(20));
+
+        ArrayList<Integer> marks = new ArrayList<>();
+        marks.ensureCapacity(100);
+        System.out.println(marks.isEmpty());
+        list.add(30);
+        list.add(24);
+        list.add(30);
+        System.out.println("Printing Orginial List" + list);
+        System.out.println(list.lastIndexOf(30));
+
+        LinkedList<Integer> li = new LinkedList<>();
+        li.add(10);
+        System.out.println(li);
+        li.addFirst(1);
+        System.out.println(li);
+        li.addLast(101);
+        System.out.println(li);
+        System.out.println(li.getFirst());
+        System.out.println(li.getLast());
+        System.out.println(li.peek());
+        System.out.println("Before: " + li);
+        System.out.println("pollig:" + li.poll());
+//        System.out.println(li.poll());
+        System.out.println("After : " +li);
+
+//        li.removeFirst();
+//        System.out.println(li);
+//        li.removeLast();
+//        System.out.println(li);
+
 
     }
 }

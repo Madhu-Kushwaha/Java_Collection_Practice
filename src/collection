@@ -15,3 +15,37 @@
   * **List** → Ordered collection, allows duplicates.
   * **Set** → Does not allow duplicate elements.
   * **Queue** → Used for processing elements in a specific order.
+
+//// Java LinkedList
+
+### Java LinkedList
+
+* The **LinkedList** class of the Java Collection Framework provides the functionality of the **linked list data structure (doubly linked list)**.
+
+* Each element in a linked list is known as a **node**. It consists of **3 fields**:
+
+1. **Prev**
+
+   * Stores the address of the previous element in the list.
+   * It is **null for the first element**.
+
+2. **Data**
+
+   * Stores the **actual data**.
+
+3. **Next**
+
+   * Stores the address of the next element in the list.
+   * It is **null for the last element**.
+
+#### Structure of a Node
+
+```
++-------+------+-------+
+| Prev  | Data | Next  |
++-------+------+-------+
+```
+
+* **Prev** → Link to the previous element.
+* **Data** → Actual value stored.
+* **Next** → Link to the next element.
