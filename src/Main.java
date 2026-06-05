@@ -7,7 +7,7 @@ public class Main {
 
         //ArrayList -> concrete class
 
-        List<Integer> list = new LinkedList<>();
+        List<Integer> list = new Stack<>();
         //
         list.add(10);
         list.add(20);
@@ -19,7 +19,7 @@ public class Main {
         System.out.println(list);
 
         //addAll
-        List<Integer> list2 = new LinkedList<>();
+        List<Integer> list2 = new Stack<>();
         list2.add(101);
         list2.add(50);
 
@@ -44,7 +44,7 @@ public class Main {
             System.out.println("Element: " + iterator.next());
         }
 
-        List<Integer> list3 = new ArrayList<>();
+        List<Integer> list3 = new Stack<>();
         list3.add(11);
         list3.add(12);
         list3.add(14);
@@ -116,6 +116,28 @@ public class Main {
 //        li.removeLast();
 //        System.out.println(li);
 
+        Stack<Integer> st = new Stack<>();
+        st.push(4201);
+        System.out.println(st);
 
+        st.push(4203);
+        System.out.println(st);
+        st.push(420);
+        System.out.println(st);
+
+        st.pop();
+        System.out.println(st);
+
+        System.out.println(st.peek());
+        System.out.println(st.search(4203));
+        System.out.println(st.empty());
     }
 }
+
+
+//stack methods
+//push()
+//    pop()
+//        peek()
+//            search()
+//                empty()
